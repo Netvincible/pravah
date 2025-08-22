@@ -85,4 +85,5 @@ New Things learned:
     1. Template
     2. Initializer_list
     3. When using templete its better to write driver.cpp in header file
+    4. in functions use call by reference when your object has pointer in it, and destructor destroys the memory at pointer.
 */

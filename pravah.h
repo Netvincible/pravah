@@ -119,8 +119,8 @@ template <typename T> class pravah
             }
         }
 
-        void nakal(pravah<T> obj)   //Here you can understand why do we call method of object in which value is to be copied and why the value to copied is passed as argument
-        {
+        void nakal(pravah& obj)   //Here you can understand why do we call method of object in which value is to be copied and why the value to copied is passed as argument
+        {                           // also we here call obj by reference because using call by value will call copy variable's destructor, the problem is copy variable's destructor destroys the memory at which pointer is pointing to which is same as our original variable
             size_t newS=obj.maap();
             if(pr==nullptr)
                 pr=new T[newS];
