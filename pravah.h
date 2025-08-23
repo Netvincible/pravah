@@ -50,12 +50,12 @@ template <typename T> class pravah
         void nivesh(int index,T value)
         {
             T* temp=new T[sz+1];
-            for(int i=0;i<sz;i++)
+            for(int i=0;i<sz+1;i++)
             {
                 if(i<index)
                     temp[i]=pr[i];
                 else if(i>index)
-                    temp[i+1]=pr[i];
+                    temp[i]=pr[i-1];
                 else
                     temp[i]=value;
             }
